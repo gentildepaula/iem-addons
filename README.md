@@ -1,4 +1,20 @@
-iem-addons
-==========
+# Addons for Interspire Email Marketer (IEM)
 
-Interspire Email Marketer Addons
+Increase the performance and Delivery from Interspire Email Marketer.
+
+------------
+
+
+## Addons
+
+- Multiple MTA + IP Monitor
+- Multithread
+- Feedback Loops
+- Spining
+- Advanced Backup/Export
+- Social Networks
+- GeoLocation Statistics
+- ISP Analysis
+
+
+
