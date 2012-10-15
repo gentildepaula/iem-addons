@@ -1,7 +1,7 @@
 10
 
 dir
-1251
+1301
 svn://source.maborak.com/release/interspire/email.marketer/addons/mta/templates
 svn://source.maborak.com
 
@@ -94,14 +94,14 @@ has-props
 
 523
 
-iem_mta_send_select_mta.tpl
+message.tpl
 file
 
 
 
 
 2012-05-08T13:14:01.000000Z
-7495da54c9544e19befac907bd856053
+e548f0ef3678e5434184925641c44259
 2012-05-28T11:52:59.244593Z
 1160
 maborak
@@ -126,7 +126,7 @@ has-props
 
 
 
-282
+16
 
 main.tpl
 file
@@ -162,14 +162,14 @@ has-props
 
 989
 
-message.tpl
+iem_mta_send_select_mta.tpl
 file
 
 
 
 
 2012-05-08T13:14:01.000000Z
-e548f0ef3678e5434184925641c44259
+7495da54c9544e19befac907bd856053
 2012-05-28T11:52:59.244593Z
 1160
 maborak
@@ -194,7 +194,7 @@ has-props
 
 
 
-16
+282
 
 group_mtas_details.tpl
 file
@@ -230,40 +230,6 @@ has-props
 
 3375
 
-mta_group_list.tpl
-file
-
-
-
-
-2012-05-12T10:13:04.000000Z
-56c9cc7a8c6aaac3c2c8e35e8b52c121
-2012-05-28T11:52:59.244593Z
-1160
-maborak
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2682
-
 css.tpl
 file
 
@@ -298,14 +264,14 @@ has-props
 
 812
 
-tooltip.tpl
+mta_group_list.tpl
 file
 
 
 
 
-2012-05-08T13:14:01.000000Z
-7c2507cc4f26a81c674b29e58ad21432
+2012-05-12T10:13:04.000000Z
+56c9cc7a8c6aaac3c2c8e35e8b52c121
 2012-05-28T11:52:59.244593Z
 1160
 maborak
@@ -330,7 +296,7 @@ has-props
 
 
 
-344
+2682
 
 mta_add_mta.tpl
 file
@@ -366,14 +332,14 @@ has-props
 
 5532
 
-group.tpl
+tooltip.tpl
 file
 
 
 
 
 2012-05-08T13:14:01.000000Z
-5e9519a698e5a3f3d5a4d078511ace21
+7c2507cc4f26a81c674b29e58ad21432
 2012-05-28T11:52:59.244593Z
 1160
 maborak
@@ -398,7 +364,41 @@ has-props
 
 
 
-1776
+344
+
+iem_mta_schedule_info_content.tpl
+file
+
+
+
+
+2012-07-22T07:49:32.000000Z
+2273b004fd3c493e09998acf6f0ae1a9
+2012-07-23T02:18:20.439970Z
+1184
+maborak
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3475
 
 iem_campaign_mta_mail_settings.tpl
 file
@@ -434,16 +434,16 @@ has-props
 
 3766
 
-iem_mta_schedule_info_content.tpl
+group.tpl
 file
 
 
 
 
-2012-07-22T07:49:32.000000Z
-2273b004fd3c493e09998acf6f0ae1a9
-2012-07-23T02:18:20.439970Z
-1184
+2012-05-08T13:14:01.000000Z
+5e9519a698e5a3f3d5a4d078511ace21
+2012-05-28T11:52:59.244593Z
+1160
 maborak
 has-props
 
@@ -466,7 +466,7 @@ has-props
 
 
 
-3475
+1776
 
 group_export.tpl
 file
