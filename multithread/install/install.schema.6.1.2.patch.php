@@ -1,0 +1,134 @@
+<?php
+/*
+
+$LastChangedDate: 2012-08-28 22:29:33 -0400 (Tue, 28 Aug 2012) $
+$Rev: 1229 $
+$Author: maborak $
+$Id: install.schema.6.1.2.patch.php 1229 2012-08-29 02:29:33Z maborak $
+$HeadURL: svn://source.maborak.com/dev/interspire/email.marketer/addons/multithread/install/install.schema.6.1.2.patch.php $
+
++--------------------------------------------------------------------------------
+|   Addons: Multithread
+|   Copyright (C) 2012 Maborak Technologies <maborak@maborak.com>
++--------------------------------------------------------------------------------
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+*/
+/*
+ * IEM_PATH: admin/com
+ */
+$installer_addon_name = "Multi-Thread";
+$files = array();
+$files[] = array(
+    'fuse'=>true,
+    'type'=>'tpl',
+    'file'=>IEM_PATH . '/templates/send_step3.tpl',
+    'data'=>array(
+        array(
+            'line'=>189,
+            'insert'=>'i',
+            'content'=>'1A')));
+$files[] = array(
+    'fuse'=>true,
+    'type'=>'php',
+    'file'=>IEM_PATH . '/../functions/send.php',
+    'data'=>array(
+        array(
+            'line'=>940,
+            'insert'=>'i',
+            'content'=>'2A'),
+        array(
+            'line'=>332,
+            'insert'=>'i',
+            'content'=>'2B')
+    ));
+
+$files[] = array(
+		'fuse'=>true,
+		'type'=>'tpl',
+		'file'=>IEM_PATH . '/templates/send_step4_cron.tpl',
+		'data'=>array(
+				array(
+						'line'=>29,
+						'insert'=>'i',
+						'content'=>'3A')));
+
+$files[] = array(
+		'fuse'=>true,
+		'type'=>'php',
+		'file'=>IEM_PATH . '/../functions/api/jobs_send.php',
+		'data'=>array(
+				array(
+						'line'=>52,
+						'insert'=>'i',
+						'content'=>'4A'),
+				array(
+						'line'=>157,
+						'insert'=>'i',
+						'content'=>'4B'),
+				array(
+						'line'=>318,
+						'insert'=>'i',
+						'content'=>'4C'),
+				array(
+						'line'=>314,
+						'insert'=>'i',
+						'content'=>'4CA'),
+				array(
+						'line'=>360,
+						'insert'=>'r',
+						'content'=>'4D'),
+				array(
+						'line'=>402,
+						'insert'=>'i',
+						'content'=>'4E'),
+				array(
+						'line'=>393,
+						'insert'=>'i',
+						'content'=>'4F')
+));
+
+$files[] = array(
+		'fuse'=>true,
+		'type'=>'php',
+		'file'=>IEM_PATH . '/../functions/api/api.php',
+		'data'=>array(
+				array(
+						'line'=>942,
+						'insert'=>'i',
+						'content'=>'5A')
+		));
+
+$files[] = array(
+		'fuse'=>true,
+		'type'=>'php',
+		'file'=>IEM_PATH . '/../functions/api/send.php',
+		'data'=>array(
+				array('line'=>"565,567",'type'=>'comment'),
+				array('line'=>"706,708",'type'=>'comment'),
+				array('line'=>681,'insert'=>'r','content'=>"6A"),
+				array('line'=>720,'insert'=>'i','content'=>"6B")
+		));
+$files[] = array(
+		'fuse'=>true,
+		'type'=>'php',
+		'file'=>IEM_PATH . '/init-legacy.php',
+		'data'=>array(
+				array(
+						'line'=>541,
+						'insert'=>'i',
+						'content'=>'7A')
+		));
+?>

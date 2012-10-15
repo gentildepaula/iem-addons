@@ -1,0 +1,7 @@
+<addon_description>
+	<name>MT: Spins</name>
+	<description>Rotate Content/Subject/SenderName/MailFrom</description>
+	<author>Maborak Technologies</author>
+	<version>0.1</version>
+	<hasconfiguration>0</hasconfiguration>
+</addon_description>
